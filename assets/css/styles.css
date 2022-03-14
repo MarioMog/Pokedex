@@ -1,0 +1,149 @@
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #dddddd;
+  height: 100vh;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  color: green;
+}
+.container {
+  width: 80vh;
+  height: 80vh;
+  padding: 2.5vw;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+input[type="text"] {
+  width: 80%;
+  font-size: 1.5em;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid;
+}
+button {
+  width: 20%;
+  font-size: 1.5em;
+  padding: 12px 20px;
+  margin: 8px 0;
+  float: right;
+  border-radius: 10px;
+  border: none;
+  background-color: #307afa;
+  color: #ffffff;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #275fc0;
+}
+.pokedex {
+  background-image: url("../svg/pokedex.svg");
+  margin: 8% auto;
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+}
+.sprite {
+  width: 32%;
+  height: 26%;
+  position: absolute;
+  top: 27%;
+  left: 9%;
+  justify-content: center;
+}
+.sprite img {
+  height: 100%;
+  display: block;
+  margin: auto;
+}
+.stats {
+  width: 30%;
+  height: 40%;
+  position: absolute;
+  top: 30%;
+  right: 9%;
+  padding: 0 10px 10px 10px;
+}
+.stat-container {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.right-align {
+  float: right;
+}
+.name {
+  font-size: 1.3em;
+}
+.type {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 5px;
+  float: left;
+  color: #ffff;
+}
+.electric {
+  background-color: #ffea70;
+}
+.normal {
+  background-color: #b09398;
+}
+.fire {
+  background-color: #ff675c;
+}
+.water {
+  background-color: #0596c7;
+}
+.ice {
+  background-color: #afeafd;
+}
+.rock {
+  background-color: #999799;
+}
+.flying {
+  background-color: #7ae7c7;
+}
+.grass {
+  background-color: #4a9681;
+}
+.psychic {
+  background-color: #ffc6d9;
+}
+.ghost {
+  background-color: #561d25;
+}
+.bug {
+  background-color: #a2faa3;
+}
+.poison {
+  background-color: #795663;
+}
+.ground {
+  background-color: #d2b074;
+}
+.dragon {
+  background-color: #da627d;
+}
+.steel {
+  background-color: #1d8a99;
+}
+.fighting {
+  background-color: #2f2f2f;
+}
+.fairy {
+  background-color: #f592a8;
+}
+.default {
+  background-color: #2a1a1f;
+}
