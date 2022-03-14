@@ -22,6 +22,7 @@ const renderPokemon = (data) => {
   }<span class="right-align">Nº ${data.id}</span>`;
   const sprite = data.sprites.front_default;
   pokeImg.setAttribute("src", sprite);
+  pokeImg.setAttribute("alt", name);
 
   data.stats.forEach((stat) => {
     document.getElementById(
