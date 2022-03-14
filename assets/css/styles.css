@@ -7,11 +7,11 @@
 body {
   background-color: #dddddd;
   height: 100vh;
+  color: #000;
 }
 .center {
   display: flex;
   justify-content: center;
-  color: green;
 }
 .container {
   width: 80vh;
@@ -75,7 +75,7 @@ button:hover {
   padding: 0 10px 10px 10px;
 }
 .stat-container {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 6px;
 }
@@ -83,7 +83,7 @@ button:hover {
   float: right;
 }
 .name {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .type {
   width: fit-content;
