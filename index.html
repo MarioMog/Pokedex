@@ -15,7 +15,7 @@
   <body class="center">
     <div class="container">
       <div class="form">
-        <form action="">
+        <form action="" autocomplete="off">
           <label for="nameSearch"></label
           ><input
             id="nameSearch"
@@ -27,7 +27,13 @@
       </div>
 
       <div class="pokedex">
-        <div class="sprite"><img id="spriteImg" /></div>
+        <div class="sprite">
+          <img
+            id="spriteImg"
+            src="./assets/imgs/silhouette.png"
+            alt="silhouette.png"
+          />
+        </div>
         <div class="stats">
           <div id="name" class="stat-container name">
             <p id="pokemonName"></p>
