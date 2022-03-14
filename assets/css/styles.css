@@ -75,15 +75,15 @@ button:hover {
   padding: 0 10px 10px 10px;
 }
 .stat-container {
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 .right-align {
   float: right;
 }
 .name {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .type {
   width: fit-content;
