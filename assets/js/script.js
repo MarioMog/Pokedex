@@ -1,7 +1,26 @@
 const nameSearch = document.getElementById("nameSearch");
 const btnSearch = document.getElementById("btnSearch");
 const pokeImg = document.getElementById("spriteImg");
+const buttonPage = document.getElementById("changePage");
+const p1 = document.querySelector(".p1");
+const p2 = document.querySelector(".p2");
 
+let actualPage = 0;
+
+const changePage = () => {
+  if (buttonPage.innerText != "Ver ataques") {
+    p1.style.display = "block";
+    p2.style.display = "none";
+    buttonPage.innerText = "Ver ataques";
+  } else {
+    {
+      buttonPage.innerText = "Ver stats";
+      p2.style.display = "block";
+      p1.style.display = "none";
+    }
+  }
+};
+buttonPage.addEventListener("click", changePage);
 const myFunction = (event) => {
   event.preventDefault();
   const value = nameSearch.value;
@@ -16,7 +35,16 @@ const myFunction = (event) => {
 
 //recopila los sprites del pokemon que estamos buscando
 const renderPokemon = (data) => {
+  actualPage = 1;
   const name = data.forms[0].name;
+  let abilities = "";
+  let count = 0;
+
+  data.abilities.forEach(({ ability }) => {
+    count++;
+    abilities += `<div class="stat-container"><p>Atack ${count}: ${ability.name}</p></div>`;
+  });
+  document.getElementById("p2").innerHTML = abilities;
   document.getElementById("pokemonName").innerHTML = `${
     name.charAt(0).toUpperCase() + name.slice(1)
   }<span class="right-align">Nº ${data.id}</span>`;
